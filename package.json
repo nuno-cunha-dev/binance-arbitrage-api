@@ -6,7 +6,10 @@
     "dev": "bun run --watch src/index.ts"
   },
   "dependencies": {
-    "elysia": "latest"
+    "@elysiajs/cors": "^0.7.0",
+    "binance-api-node": "^0.12.7",
+    "elysia": "latest",
+    "mathjs": "^11.11.1"
   },
   "devDependencies": {
     "bun-types": "latest"

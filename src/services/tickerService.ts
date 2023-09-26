@@ -1,4 +1,3 @@
-import Binance from "binance-api-node";
 import { BinanceBookTickers } from "../types";
 import config from "../config";
 
@@ -7,6 +6,7 @@ if (!config.binanceApiKey || !config.binanceApiSecret) {
   throw new Error('Please set BINANCE_API_KEY and BINANCE_API_SECRET in .env file');
 }
 
+const Binance = require('binance-api-node').default;
 const binance = Binance({
   apiKey: config.binanceApiKey,
   apiSecret: config.binanceApiSecret,
